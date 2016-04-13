@@ -21,7 +21,8 @@ This project will help a person understand the working of EJS (Embedded JavaScri
   Suppose this object `{ Name:"David Bowie", "Songs":["Man who sold the world", "Starman", "Space Oddity"]  }` is provided by the server to a particular view, and this data is to be displayed on the page which is requested by the client, then the view will include the following lines of code-
   
   1.  <%= key %>  - will result in rendering the value of `key` (property of the object defined above).
-      <%= Name %> - In this case it will be `David Bowie`
+      
+    <%= Name %> - In this case it will be `David Bowie`
   
   2.  <% %> - will execute as normal javascript.
   
