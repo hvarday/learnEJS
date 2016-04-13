@@ -10,6 +10,11 @@ This project will help a person understand the working of EJS (Embedded JavaScri
   *  [/sample](http://localhost:3000/sample)
   *  [/](http://localhost:3000/)
 
+###New Views(In Progress)
+  * [/product](http://localhost:3000/product)
+  * [/projects](http://localhost:3000/projects)
+  * [/record](http://localhost:3000/record)
+
 ###Instructions for Installation
   
   *  Clone this repo
