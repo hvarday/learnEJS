@@ -178,13 +178,13 @@ var projectOBJ =    {   "info": [ {
 ]
 }
 
-var productOBJ = {  info    :   [
+var productOBJ = {  info    :   {
     {
         "id": 2,
         "name": "An ice sculpture",
         "price": 12.50,
         "tags": ["cold", "ice"],
-        "dimensions": {
+        "dimensions": [
             "length": 7.0,
             "width": 12.0,
             "height": 9.5

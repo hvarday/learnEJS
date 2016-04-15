@@ -5,11 +5,14 @@
         <title>Travel Info</title>
     </head>
     <style>
-
+    h1 {
+      text-align:center;
+    }
     </style>
     <body>
+        <h1>Information of Products</h1>
         <ul>
-          <h1>Information of Products</h1>
+
           <% for(var i=0; i<info.length ; i++) { %>
         <li>  <%= info[i].id %> </li>
         <br>
@@ -24,5 +27,6 @@
           <li> <%=info[i].price %> </li>
 <%  } %>
         </ul>
-      
+      </body>
+
 </html>
