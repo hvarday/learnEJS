@@ -3,10 +3,85 @@
     <head>
         <meta charset="utf-8">
         <title>Devices Info</title>
+            <link rel='stylesheet' href='/stylesheets/style.css' />
     </head>
     <body>
+      <% for(j=0;j<info.length;j++) { %>
+        <br>
+      <div class="device">
         <p>
-            Under construction
+            ID: <%= info[j]["_id"]["$oid"] %>
         </p>
+        <p>
+          Approvalfy: <%= info[j].approvalfy %>
+        </p>
+        <p>
+          Board Approval Month: <%= info[j].board_approval_month %>
+        </p>
+        <p>
+          Board Approval Date: <%= info[j].boardapprovaldate %>
+        </p>
+        <p>
+          Borrower: <%= info[j].borrower %>
+        </p>
+        <p>
+          Country Code: <%= info[j].countrycode %>
+        </p>
+        <p>
+          Country Short Name: <%= info[j].countryshortname %>
+        </p>
+        <p>
+          Docty: <%= info[j].docty %>
+        </p>
+        <p>
+          IDA Commamt: <%= info[j].idacommamt %>
+        </p>
+        <p>
+          Lend Project Cost: <%= info[j].lendprojectcost %>
+        </p>
+        <p>
+          Major Sector Percentage:
+            <ul>
+              <% for(i=0;i<info[j].majorsector_percent.length;i++) { %>
+              <li>
+                <%= info[j].majorsector_percent[i].Name %> = <%= info[j].majorsector_percent[i].Percent %> %
+              </li>
+              <% } %>
+            </ul>
+        </p>
+        <p>
+          Project Abstract:<br><br> <%= info[0].project_abstract.cdata %>
+        </p>
+        <p>
+          Project Name: <%= info[j].project_name %>
+        </p>
+        <p>
+          <b>References:</b> <br>
+            Doc Type Description:
+            <ul>
+              <% for(i=0;i<info[j].projectdocs.length;i++) { %>
+              <li><%= info[j].projectdocs[i].DocTypeDesc  %></li>
+              <% } %>
+            </ul>
+            <br>
+            Doc Type:
+            <ul>
+              <% for(i=0;i<info[j].projectdocs.length;i++) { %>
+              <li><%= info[j].projectdocs[i].DocType  %></li>
+              <% } %>
+            </ul>
+            <br>
+            Doc URL:
+            <ul>
+              <% for(i=0;i<info[j].projectdocs.length;i++) { %>
+              <li><%= info[j].projectdocs[i].DocURL  %></li>
+              <% } %>
+            </ul>
+        </p>
+        <p>
+          URL: <%= info[j].url %>
+        </p>
+      </div>
+      <% } %>
     </body>
 </html>

@@ -2,11 +2,42 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Student Record</title>
+        <title>Personal Record</title>
     </head>
     <body>
-        <p>
-            Under construction
+        <p align="center">
+            Personal RECORD
+            <ul>
+                <%for(var i=0; i<Object.keys(info).length; i++){%>
+                    <li>
+                        ID  : <%= info[i].id %> <br \>
+                        NAME: <%= info[i].name %>  <br \>
+                        USERNAME: <%= info[i].username %>  <br \>
+                        EMAIL: <%= info[i].email %>              <br \>      
+                        ADDRESS:   <ul> <li>                  
+                        STREET  : <%= info[i].address.street %></li>
+                        <li>SUITE: <%= info[i].address.suite %></li>
+                        <li>CITY: <%= info[i].address.city %></li>
+                        <li>ZIPCODE: <%= info[i].address.zipcode %>   </li>
+                        <li>GEO: <ul> <li>
+                        LATITUDE: <%= info[i].address.geo.lat %> </li>
+                        <li>LONGITUDE: <%= info[i].address.geo.lng %> </li></ul></li></ul>                    
+                    
+                        PHONE: <%= info[i].phone %> <br \>
+                        WEBSITE: <%= info[i].website %>  <br \>
+                        COMPANY:<ul><li>                  
+                        NAME  : <%= info[i].company.name %></li>
+                        <li>CATCHPHRASE: <%= info[i].company.catchPhrase %></li>
+                        <li>BS: <%= info[i].company.bs %></li>
+                        <br>
+            <br>
+                        
+                    </ul>        
+                    </li>
+                <%}%>
+            </ul>
+            
         </p>
+       
     </body>
 </html>

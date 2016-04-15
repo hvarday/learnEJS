@@ -147,6 +147,9 @@ var projectOBJ =    {   "info": [ {
         "Name": "Public Administration, Law, and Justice", "Percent": 30
     }
     ],
+    "project_abstract": {
+        "cdata": "The development objective of the Second Phase of General Education Quality Improvement Project for Ethiopia is to improve learning conditions in primary and secondary schools and strengthen institutions at different levels of educational administration. The project has six components. The first component is curriculum, textbooks, assessment, examinations, and inspection. This component will support improvement of learning conditions in grades KG-12 by providing increased access to teaching and learning materials and through improvements to the curriculum by assessing the strengths and weaknesses of the current curriculum. This component has following four sub-components: (i) curriculum reform and implementation; (ii) teaching and learning materials; (iii) assessment and examinations; and (iv) inspection. The second component is teacher development program (TDP). This component will support improvements in learning conditions in both primary and secondary schools by advancing the quality of teaching in general education through: (a) enhancing the training of pre-service teachers in teacher education institutions; and (b) improving the quality of in-service teacher training. This component has following three sub-components: (i) pre-service teacher training; (ii) in-service teacher training; and (iii) licensing and relicensing of teachers and school leaders. The third component is school improvement plan. This component will support the strengthening of school planning in order to improve learning outcomes, and to partly fund the school improvement plans through school grants. It has following two sub-components: (i) school improvement plan; and (ii) school grants. The fourth component is management and capacity building, including education management information systems (EMIS). This component will support management and capacity building aspect of the project. This component has following three sub-components: (i) capacity building for education planning and management; (ii) capacity building for school planning and management; and (iii) EMIS. The fifth component is improving the quality of learning and teaching in secondary schools and universities through the use of information and communications technology (ICT). It has following five sub-components: (i) national policy and institution for ICT in general education; (ii) national ICT infrastructure improvement plan for general education; (iii) develop an integrated monitoring, evaluation, and learning system specifically for the ICT component; (iv) teacher professional development in the use of ICT; and (v) provision of limited number of e-Braille display readers with the possibility to scale up to all secondary education schools based on the successful implementation and usage of the readers. The sixth component is program coordination, monitoring and evaluation, and communication. It will support institutional strengthening by developing capacities in all aspects of program coordination, monitoring and evaluation; a new sub-component on communications will support information sharing for better management and accountability. It has following three sub-components: (i) program coordination; (ii) monitoring and evaluation (M and E); and (iii) communication."
+    },
     "project_name":"TN: DTF Social Protection Reforms Support",
     "projectdocs":[ {
         "DocTypeDesc": "Project Information Document (PID), Vol.1 of 1", "DocType": "PID", "EntityID": "000333037_20131024115616", "DocURL": "http://www-wds.worldbank.org/servlet/WDSServlet?pcont=details&eid=000333037_20131024115616", "DocDate": "29-MAR-2013"
@@ -178,7 +181,11 @@ var projectOBJ =    {   "info": [ {
 ]
 }
 
+<<<<<<< HEAD
 var productOBJ = {  info    :   {
+=======
+var productOBJ = {  "info"    :   [
+>>>>>>> 5ef5257ac89a14d8e68e9ccc3c68da310e172650
     {
         "id": 2,
         "name": "An ice sculpture",
@@ -198,6 +205,7 @@ var productOBJ = {  info    :   {
         "id": 3,
         "name": "A blue mouse",
         "price": 25.50,
+        "tags": ["cold", "ice"],
         "dimensions": {
             "length": 3.1,
             "width": 1.0,
@@ -212,7 +220,7 @@ var productOBJ = {  info    :   {
 };
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
     res.render('index', { title: 'Express' });
 });
 

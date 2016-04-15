@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Travel Info</title>
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <ul>
+          <h1>Information of Products</h1>
+          <% for(var i=0; i<info.length ; i++) { %>
+        <li>  <%= info[i].id %> </li>
+        <br>
+        <li>  <%=info[i].name %> </li>
+        <br>
+          <li><%=info[i].tags %> </li>
+          <br>
+          <li><%=info[i].dimensions %> </li>
+          <br>
+          <li><%= info[i].warehouseLocation %> </li>
+          <br>
+          <li> <%=info[i].price %> </li>
+<%  } %>
+        </ul>
+      
+</html>
